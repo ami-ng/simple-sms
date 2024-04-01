@@ -7,6 +7,32 @@ body {
   font-weight: normal;
   line-height: 1.5;
 }
+h1, h2 {
+  font-size: medium;
+
+}
+.image-container {
+  position: relative;
+  width: 100%;
+}
+
+.image-container img {
+  display: block;
+  width: 100%;
+}
+
+.text-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+
 .footer-custom {
   padding: 1rem 0;
   background-color: #f8f9fa;
@@ -29,6 +55,18 @@ body {
 
 .my-main-content {
   margin-bottom: 0px;
+}
+.btn-primary-custom {
+  background-color: #6c757d;
+  border-color: #6c757d;
+}
+.btn-primary-custom:hover {
+  background-color: #40C696;
+  border-color: #40C696;
+}
+.btn-primary:hover {
+  background-color: #6c757d;
+  border-color: #6c757d;
 }
 
 /*# sourceMappingURL=app.css.map */
