@@ -22,5 +22,8 @@
 .my-main-content {
   margin-bottom: 0px;
 }
+li {
+  text-decoration: none;
+}
 
 /*# sourceMappingURL=app.css.map */
