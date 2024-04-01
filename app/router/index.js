@@ -4,9 +4,7 @@ const ApiRouter = require("./api");
 
 const MainRouter = Router();
 
-MainRouter.use("/", FrontendRouter);
 MainRouter.use("/api", ApiRouter);
-
-
+MainRouter.use(FrontendRouter);
 
 module.exports = MainRouter;
