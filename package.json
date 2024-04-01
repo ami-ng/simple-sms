@@ -11,6 +11,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "ejs": "^3.1.9",
+    "ejs-layouts": "^0.0.1",
     "express": "^4.19.2"
   }
 }
