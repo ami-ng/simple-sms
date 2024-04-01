@@ -1,17 +1,25 @@
-<div>
-    <form action="/api/login" method="get" id="">
-        <div>
-            <label for="username">Username</label>
-            <input type="text" name="username" id="username">
-        </div>
-        <div>
-            <label for="password">Password</label>
-            <input type="password" name="password" id="password">
-        </div>
-        <div>
-            <input type="submit" value="Login">
-        </div>
-    </form>
+<%- contentFor("body") %>
 
-    <!-- <script src="/p/script/login.js"></script> -->
+<div class="container my-5 pt-5">
+    <div class="card p-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <h1 class="mb-4 text-center">Login</h1>
+            <form action="api/login">
+                <div class="mb-3">
+                    <label for="username" class="form-label">username</label>
+                    <input type="text" class="form-control" id="contactName" placeholder="username">
+                </div>
+                
+                <div class="mb-3">
+                    <label for="contactEmail" class="form-label">password</label>
+                    <input type="password" class="form-control" id="contactEmail" placeholder="*****">
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </div>
+    </div>
 </div>
+
+<%- contentFor("scripts") %>

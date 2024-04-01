@@ -1,10 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
 
-.fixed-footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  font-weight: normal;
+  line-height: 1.5;
+}
+h1, h2 {
+  font-size: medium;
+
+}
+.image-container {
+  position: relative;
+  width: 100%;
 }
 
-.main-content {
-    height: 80vh;
+.image-container img {
+  display: block;
+  width: 100%;
 }
+
+.text-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+
+.footer-custom {
+  padding: 1rem 0;
+  background-color: #f8f9fa;
+  border-top: 1px solid #e7e7e7;
+}
+.footer-custom span,
+.footer-custom a {
+  color: #6c757d;
+  font-size: 0.875rem;
+}
+.footer-custom a:hover {
+  text-decoration: underline;
+}
+.footer-custom .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.my-main-content {
+  margin-bottom: 0px;
+}
+.btn-primary-custom {
+  background-color: #6c757d;
+  border-color: #6c757d;
+}
+.btn-primary-custom:hover {
+  background-color: #40C696;
+  border-color: #40C696;
+}
+.btn-primary:hover {
+  background-color: #6c757d;
+  border-color: #6c757d;
+}
+
+/*# sourceMappingURL=app.css.map */

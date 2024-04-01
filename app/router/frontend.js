@@ -17,5 +17,11 @@ FrontendRouter.get("/login", (req, res) => {
         layout: "layouts/frontend",
     }
 });
+FrontendRouter.get("/register", (req, res) => {
+    res.render("pages/register"),
+    {
+        layout: "layouts/frontend",
+    }
+});
 
 module.exports = FrontendRouter;
