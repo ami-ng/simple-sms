@@ -1,6 +1,6 @@
 const path = require("path");
 const express = require("express");
-const mongoose = require("mongoose");
+const initiateMongoServer = require("./app/database/index");
 const app = express();
 const bodyParser = require("body-parser");
 const MainRouter = require("./app/router/index");
@@ -19,10 +19,6 @@ app.use("/p/*", (req, res) => res.status(404).send("Media Not Found"));
 app.use(MainRouter);
 
 const server = app.listen("3000", async () => {
-    await mongoose.connect("mongodb://localhost:27017/express", {
-        useNewUrlParser: true,
-        useUnifiedTopology: true,
-    });
-
+    initiateMongoServer;
     console.log("Server is running on port 3000");
 });
