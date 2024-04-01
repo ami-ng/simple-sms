@@ -10,28 +10,28 @@ DashboardRouter.get("/", (req, res, next) => {
 DashboardRouter.get("/dashboard", (req, res, next) => {
   res.render("pages/admin/dashboard", {
     title: "Admin Dashboard",
-    layout: "layouts/layout-admin",
+    layout: "layouts/admin",
   });
 });
 
 DashboardRouter.get("/manage-user", (req, res, next) => {
   res.render("pages/admin/manage-user", {
     title: "Admin Dashboard",
-    layout: "layouts/layout-admin",
+    layout: "layouts/admin",
   });
 });
 
 DashboardRouter.get("/edit-profile/*", (req, res) => {
   res.render("pages/admin/edit-profile", {
     title: "Admin Dashboard",
-    layout: "layouts/layout-admin",
+    layout: "layouts/admin",
   });
 });
 
 DashboardRouter.get("/website-settings", (req, res, next) => {
   res.render("pages/admin/website-settings", {
     title: "Admin Dashboard",
-    layout: "layouts/layout-admin",
+    layout: "layouts/admin",
   });
 });
 

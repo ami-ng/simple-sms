@@ -9,7 +9,7 @@ const PublicRouter = Router();
 PublicRouter.get("/", (req, res, next) => {
   res.render("pages/index", {
     title: "Home",
-    layout: "layouts/layout-public",
+    layout: "layouts/public",
     active: "home",
   });
 });
