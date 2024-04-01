@@ -4,21 +4,21 @@ const { Router } = require("express");
 UserRouter.get("/login", async (req, res) => {
   res.render("pages/auth/login", {
     title: "Login",
-    layout: "layouts/public",
+    layout: "layouts/simple",
   });
 });
 
 UserRouter.get("/logout", (req, res, next) => {
   res.render("pages/auth/logout", {
     title: "Logout",
-    layout: "layouts/public",
+    layout: "layouts/simple",
   });
 });
 
 UserRouter.get("/register", (req, res, next) => {
   res.render("pages/auth/register", {
     title: "register",
-    layout: "layouts/public",
+    layout: "layouts/simple",
   });
 });
 
