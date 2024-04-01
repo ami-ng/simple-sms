@@ -1,7 +1,10 @@
 const path = require("path");
 const express = require("express");
+const {config} = require("dotenv");
 global.appRoot = path.resolve(__dirname);
 const initiateMongoServer = require("./app/database/index");
+
+config();
 const app = express();
 const bodyParser = require("body-parser");
 const MainRouter = require("./app/routers/index");
@@ -20,6 +23,6 @@ app.use("/p/*", (req, res) => res.status(404).send("Media Not Found"));
 app.use(MainRouter);
 
 const server = app.listen("3000", async () => {
-  initiateMongoServer;
+  initiateMongoServer();
   console.log("Server is running on port 3000");
 });
