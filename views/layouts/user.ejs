@@ -6,9 +6,13 @@
   </head>
   <body>
     <div class="main-content">
-      <%- include ("../partials/user/navbar.ejs") %> <%- body %>
+      <%- include ("../partials/user/topbar.ejs") %>
+      <div class="container-fluid">
+        <%- include ("../partials/user/sidebar.ejs") %> 
+        <%- body %>
+      </div>
     </div>
     <%- include ("../partials/user/footer.ejs") %>
   </body>
-  <%- scripts %>
+  <%- customScripts %>
 </html>

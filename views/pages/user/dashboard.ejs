@@ -1,38 +1,12 @@
-<%- contentFor('body') %>
-
-<!-- Top Bar (Navbar) -->
-
-
+<%- contentFor('customCSS') %> <%- contentFor('body') %>
 <!-- Page Content -->
-<div class="container-fluid">
-    <div class="row">
-        <!-- Side Bar -->
-        <div class="col-md-2 bg-light">
-            <div class="d-flex flex-column flex-shrink-0 p-3 bg-light" style="height: 100vh;">
-                <ul class="nav nav-pills flex-column mb-auto">
-                    <li class="nav-item">
-                        <a href="#" class="nav-link active" aria-current="page">Dashboard</a>
-                    </li>
-                    <li>
-                        <a href="#" class="nav-link">Orders</a>
-                    </li>
-                    <li>
-                        <a href="#" class="nav-link">Products</a>
-                    </li>
-                    <li>
-                        <a href="#" class="nav-link">Customers</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- Main Content -->
-        <div class="col-md-10">
-            <h1>Welcome to Your Dashboard</h1>
-            <p>This is a basic example of a Bootstrap layout with a top navbar and a sidebar.</p>
-        </div>
-    </div>
+<div class="col-md-10">
+  <h1>Welcome to Your Dashboard</h1>
+  <p>
+    This is a basic example of a Bootstrap layout with a top navbar and a
+    sidebar.
+  </p>
 </div>
 
-<%- contentFor('scripts') %>
+<%- contentFor('customScripts') %>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.0/js/bootstrap.bundle.min.js"></script>

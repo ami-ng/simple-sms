@@ -66,8 +66,8 @@ exports.getSettingsMiddleWare = async (req, res, next) => {
     let settings = await Settings.findOne();
     if (!settings) {
       settings = new Settings({
-        websiteName: "Express Courier",
-        websiteLogoText: "Express",
+        websiteName: "Simple SMS",
+        websiteLogoText: "Simple",
       });
       await settings.save();
     }

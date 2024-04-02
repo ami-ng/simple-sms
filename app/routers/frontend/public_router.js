@@ -14,7 +14,7 @@ PublicRouter.get("/", (req, res, next) => {
   });
 });
 
-PublicRouter.use("/", (req, res, next) => {
+PublicRouter.use("/404", (req, res, next) => {
   res.render("pages/public/404", {
     title: "404 Error",
     layout: "layouts/simple",
