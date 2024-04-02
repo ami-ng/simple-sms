@@ -1,5 +1,9 @@
 <html>
-  <%- include ("../partials/header.ejs") %>
+  <head>
+    <%- include ("../partials/header.ejs") %>
+    <link rel="stylesheet" href="/p/css/user.css" />
+    <%- customCSS %>
+  </head>
   <body>
     <div class="main-content">
       <%- include ("../partials/user/navbar.ejs") %> <%- body %>
