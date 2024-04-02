@@ -22,6 +22,13 @@ UserRouter.get("/register", (req, res, next) => {
   });
 });
 
+UserRouter.get("/reset-password", (req, res, next) => {
+  res.render("pages/auth/reset-password", {
+    title: "Reset Password",
+    layout: "layouts/blank",
+  });
+});
+
 UserRouter.get("/", (req, res, next) => {
   res.redirect("/user/dashboard");
 });
