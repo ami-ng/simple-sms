@@ -71,7 +71,6 @@ exports.getSettingsMiddleWare = async (req, res, next) => {
       });
       await settings.save();
     }
-    console.log("settings", settings);
 
     if (!settings.websiteFavicon || settings.websiteFavicon.trim() === "") {
       settings.websiteFavicon = "/p/images/favicon.svg";

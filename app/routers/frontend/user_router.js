@@ -1,5 +1,5 @@
 const { Router } = require("express");
- const UserRouter = Router();
+const UserRouter = Router();
 
 UserRouter.get("/login", async (req, res) => {
   res.render("pages/auth/login", {
@@ -29,14 +29,14 @@ UserRouter.get("/", (req, res, next) => {
 UserRouter.get("/edit-profile", (req, res) => {
   res.render("pages/user/edit-profile", {
     title: "Edit Profile",
-    layout: "layouts/layout-user",
+    layout: "layouts/user",
   });
 });
 
 UserRouter.get("/dashboard", (req, res, next) => {
   res.render("pages/user/dashboard", {
     title: "Dashboard",
-    layout: "layouts/layout-user",
+    layout: "layouts/user",
   });
 });
 

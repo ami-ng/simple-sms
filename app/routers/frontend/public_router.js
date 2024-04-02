@@ -7,7 +7,7 @@ config();
 const PublicRouter = Router();
 
 PublicRouter.get("/", (req, res, next) => {
-  res.render("pages/index", {
+  res.render("pages/public/index", {
     title: "Home",
     layout: "layouts/public",
     active: "home",
@@ -15,9 +15,9 @@ PublicRouter.get("/", (req, res, next) => {
 });
 
 PublicRouter.use("/", (req, res, next) => {
-  res.render("pages/404", {
+  res.render("pages/public/404", {
     title: "404 Error",
-    layout: "layouts/layout-blank",
+    layout: "layouts/simple",
   });
 });
 
